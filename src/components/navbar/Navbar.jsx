@@ -1,11 +1,12 @@
+import Links from "./links/Links"
+import styles from "./navbar.module.css"
+
 const Navbar = () => {
-    return(
-        <div>
-            <div>Logo</div>
+    return (
+        <div className={styles.container}>
+            <div className={styles.logo}>Logo</div>
             <div>
-            <Link href="/">HomePage</Link>
-            <Link href="/about">About</Link>
-            <Link href="/contact">Contact</Link>
+                <Links />
             </div>
         </div>
     )
